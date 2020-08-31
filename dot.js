@@ -38,14 +38,14 @@ function draw() {
 
     //place years - x axis
     Object.keys(myMap).forEach((i,idx) => text(i, idx * spacing + 60 + (barWidthConst * 10) + leftMargin, topMargin + plotHeight + 20))
-    line( xLen + 20 , topMargin + plotHeight - 10,  xLen + 30, topMargin + plotHeight);
-    line( xLen + 20, topMargin + plotHeight + 10,  xLen + 30, topMargin + plotHeight);
-    
+
     // Placing lines on x-axis to show dot location w.r.r x axis
     Object.keys(myMap).forEach((i,idx) => {
         stroke(125, 121, 121);
-        line(idx * spacing + leftMargin + 80,  topMargin + plotHeight, idx * spacing + leftMargin + 80, topMargin)
+        line(idx * spacing + leftMargin + 85,  topMargin + plotHeight, idx * spacing + leftMargin + 85, topMargin)
     })
+    line( xLen + 20 , topMargin + plotHeight - 10,  xLen + 30, topMargin + plotHeight);
+    line( xLen + 20, topMargin + plotHeight + 10,  xLen + 30, topMargin + plotHeight);
 
     // Y axis
     line(leftMargin, topMargin + plotHeight, leftMargin, topMargin - 50);
@@ -75,7 +75,7 @@ function draw() {
     Object.values(myMap).forEach((i,idx) => {
         fill(237, 34, 93);
         stroke(255, 255, 255);
-        circle(idx * spacing + leftMargin + 80, topMargin + plotHeight - surplus - (i/1000000 * verticalSpacing), 20);
+        circle(idx * spacing + leftMargin + 83, topMargin + plotHeight - surplus - (i/1000000 * verticalSpacing), 20);
     })
 
     textAlign(CENTER);
