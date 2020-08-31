@@ -37,7 +37,7 @@ function draw() {
     text('Year', xLen/2, topMargin + plotHeight + 50);
 
     //place years - x axis
-    Object.keys(myMap).forEach((i,idx) => text(i, idx * spacing + 60 + (barWidthConst * 10) + leftMargin, topMargin + plotHeight + 20))
+    Object.keys(myMap).forEach((i,idx) => text(i, idx * spacing + 57 + (barWidthConst * 10) + leftMargin, topMargin + plotHeight + 20))
 
     // Placing lines on x-axis to show dot location w.r.r x axis
     Object.keys(myMap).forEach((i,idx) => {
