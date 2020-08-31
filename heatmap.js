@@ -67,7 +67,7 @@ function draw() {
 
     Object.keys(myMap).forEach((i,idx) => {
         myMap[i].forEach((monthData, idx2) =>{
-            monthData = +Object.values(monthData)[0]
+            monthData = +Object.values(monthData)[idx2]
             if (monthData < minVal){
                 minVal = monthData;
             }
